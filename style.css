@@ -47,6 +47,10 @@ body {
 .navbar__s3 {
     display: flex;
     gap: 10px;
+    align-items: center;
+}
+.navbar__s4{
+    display: none;
 }
 .mylearning{
     position: relative;
@@ -94,7 +98,6 @@ body {
 }
 
 .sale-img img {
-    height: 50%;
     width: 100%;
 
 }
@@ -137,12 +140,15 @@ body {
 }
 
 .cource-card {
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .cource-card img {
     width: 100%;
     height: 50%;
+
 
 }
 
@@ -193,4 +199,25 @@ body {
 .footer__one p{
     margin: 20px;
 }
-   
+   @media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+   }
+   @media screen and  (max-width: 600px)
+    {
+        .cource-card{
+            flex-basis: 40%;
+        }
+        .categories{
+            display: none;
+
+        }
+        .navbar__s2,.navbar__s3{
+            display: none;
+        }
+        .navbar__s4{
+            display: block;
+        }
+    }
